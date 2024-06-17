@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bangalore Home Price Prediction</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div
+      class="container vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="col-md-6">
+        <div class="card border-primary shadow-lg">
+          <div class="card-body">
+            <h2 class="card-title text-center text-primary">
+              Bangalore Home Price Prediction
+            </h2>
+            <form id="price-form">
+              <div class="form-group">
+                <label for="uiSqft" class="font-weight-bold"
+                  >Area (Square Feet)</label
+                >
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"
+                      ><i class="fas fa-ruler-combined"></i
+                    ></span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="uiSqft"
+                    name="Squareft"
+                    value="1000"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="uiBHK" class="font-weight-bold">BHK</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"
+                      ><i class="fas fa-bed"></i
+                    ></span>
+                  </div>
+                  <select class="form-control" id="uiBHK" name="uiBHK">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="uiBathrooms" class="font-weight-bold">Bath</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"
+                      ><i class="fas fa-bath"></i
+                    ></span>
+                  </div>
+                  <select
+                    class="form-control"
+                    id="uiBathrooms"
+                    name="uiBathrooms"
+                  >
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="uiLocations" class="font-weight-bold"
+                  >Location</label
+                >
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"
+                      ><i class="fas fa-map-marker-alt"></i
+                    ></span>
+                  </div>
+                  <select class="form-control" id="uiLocations">
+                    <option value="" disabled selected>
+                      Choose a Location
+                    </option>
+                    <option>Electronic City</option>
+                    <option>Rajaji Nagar</option>
+                    <!-- Additional options can be added here -->
+                  </select>
+                </div>
+              </div>
+              <div class="text-center">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="onClickedEstimatePrice()"
+                >
+                  Estimate Price
+                </button>
+              </div>
+            </form>
+            <div id="uiEstimatedPrice" class="mt-4 text-center">
+              <h2></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+body {
+  background: url("https://thumbor.forbes.com/thumbor/fit-in/1290x/https://www.forbes.com/advisor/wp-content/uploads/2020/12/real_estate_investing-e1607584315870.jpg")
+    no-repeat center center fixed; /* Replace with the URL of your background image */
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.card {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Slightly transparent white background */
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.input-group-text {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#uiEstimatedPrice h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.container {
+  height: 100vh;
+}
+
+.vh-100 {
+  min-height: 100vh;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
